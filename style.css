@@ -108,6 +108,14 @@ body{
 
 }
 
+.greatings__links__style:hover{
+
+    background-color: #9aacec;
+    padding: 0px 16px;
+
+}
+
+
 
 .greatings__main__image{
     height: auto;
