@@ -1,51 +1,159 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Roveri's Portfolio</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/animation.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <script defer src="/src/animation.js"></script>
 </head>
 
-
-<body>  
-
+<body>
     <header class="head">
-
         <nav class="head__menu">
-            <a class="head__menu__links" href="index.html">Home</a>
-            <a class="head__menu__links" href="about.html">About</a>
-            <a class="head__menu__links">Portfolio</a>
-            <a class="head__menu__links">Skills</a>
-            <a class="head__menu__links">Contact</a>
+            <a href="#about" class="head__menu__buttons">About</a>
+            <a href="#skills" class="head__menu__buttons">Skills</a>
+            <a href="#projects" class="head__menu__buttons">Projects</a>
+            <a href="#contact" class="head__menu__buttons">Contact</a>
         </nav>
-    </header> 
+    </header>
 
+    <main class="content">
+        <img src="/assets/icone_medio.png" class="content__image">
+        <section class="content__text">
 
-
-    <main class="greatings">
-
-        <img src="assets/icone_medio.png" alt="Imagem_do_perfil" class="greatings__main__image">
-
-        <section class="greatings__content">
-            <p class="greatings__text">Hello, I'm a</p>
-            <h1 class="greatings__text">Full-stack Developer</h1>
-            <p class="greatings__text">Lucas Roveri</p>
-            <div class="greatings__links">
-                <a class="greatings__links__style" href="https://github.com/Lucas-V-Roveri">Github
-                    <img src="assets/git-hub.png" alt ="Icone_github">
+            <p class="content__text__title">Hello, I'm a</p>
+            <h1 class="content__text__title">Full-Stack Developer</h1>
+            <p class="content__text__title">Lucas Roveri</p>
+            <div class="content__text__links">
+                <a href="https://github.com/Lucas-V-Roveri" class="content__text__links__button">
+                    <img src="/assets/git-hub.png" alt="Github-image"> Github
                 </a>
-                <a class="greatings__links__style" href="https://www.linkedin.com/in/lucas-vilela-roveri-Dev/">Linkedin
-                    <img src="assets/linkedin.png" alt="Icone_linkedin">
+                <a href="https://www.linkedin.com/in/lucas-vilela-roveri-952588188/" class="content__text__links__button">
+                    <img src="/assets/linkedin.png"> Linkedin 
                 </a>
             </div>
         </section>
-        
-    </main>
 
-    <footer class="footer__container">
+
+
+
+
+    </main>
     
+    <section class="about__section hidden">
+        <div id="about" class="about__section__content">
+            <h2 class="about__content__title">About me<br></br></h2>
+            <p class="about__content__text">
+                My name is Lucas Vilela Roveri, and I am a Brazilian <strong> Computer Science </strong> student at <a class="about__content__text" href="https://www.anchieta.br">UniAnchieta </a>in Jundiaí, SP. 
+                I have a passion for technology and product development and aspire to become a software engineer/developer.<br></br>
+            </p>
+            <p class="about__content__text"> I have experience with <strong>Java, JavaScript/TypeScript, Python</strong>,
+                 and frameworks like <strong>React JS</strong> and <strong>Bootstrap</strong>. I'm also skilled in cyber-security and proficient in <strong> HTML, CSS, SQL, and Git</strong>.
+                So, if our interest are the same and you would like to further discuss about technology, 
+                or if I'm the right person to work on your company,<a> Reach me out! </a>
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills__section hidden">
+
+        <h2>Skills<br></br></h2>
+    
+        <div class="skills__section__skills">
+
+            <h3>HTML</h3>
+            <div class="progress__bar">
+            <div class="skills__section__skills__html"><span>86%</span></div>
+            </div>
+            <h3>CSS</h3>
+            <div class="progress__bar ">
+                <div class="skills__section__skills__css"><span>66%</span></div>
+            </div>
+            <h3>JavaScript</h3>
+            <div class="progress__bar ">
+                <div class="skills__section__skills__javascript"><span>56%</span></div>
+            </div>
+            <h3>Java</h3>
+            <div class="progress__bar ">
+                <div class="skills__section__skills__java"><span>60%</span></div>
+            </div>
+            <h3>Python</h3>
+            <div class="progress__bar ">
+                <div class="skills__section__skills__python"><span>65%</span></div>
+            </div>
+            <h3>ReactJS</h3>
+            <div class="progress__bar ">
+                <div class="skills__section__skills__react"><span>45%</span></div>
+            </div>
+            <h3>Bootstrap</h3>
+            <div class="progress__bar ">
+                <div class="skills__section__skills__bootstrap"><span>36%</span></div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="projects" class="projects__section hidden">
+
+        <h2 class="projects__section__title hidden">Projects</h2>
+        <ul class="projects__section__list hidden">
+            <li>
+                <img src="/assets/visual_mix_project.png" alt="gerenciador-de-pdv" class="projects__section__list__image">
+                <h3 class="projects__section__list__text">Supermarket POS Manager</h3>
+                <p class="projects__section__list__text">Manage VisualMix Linux machine on Windows!</p>
+                <a class="projects__section__list__text" href="https://github.com/Lucas-V-Roveri/BOA-LTDA-Projects/tree/main">(Git)</a>
+            </li>
+            <li>
+                <img src="/assets/recipie_search_project.png" alt="rsearch_api" class="projects__section__list__image">
+                <h3 class="projects__section__list__text">Recipe Search API</h3>
+                <p class="projects__section__list__text">Find the recipes of tens of thousands of dishes.</p>
+                <a class="projects__section__list__text" href="">(Git)</a>
+            </li>
+            <li>
+                <img src="/assets/portfolio-project.png" alt="portfolio-wsite" class="projects__section__list__image">
+                <h3 class="projects__section__list__text">Portfolio Website</h3>
+                <p class="projects__section__list__text">My own portfolio project, made from scratch</p>
+                <a class="projects__section__list__text" href="">(Git)</a>
+            </li>
+        </ul>
+        <ul class="projects__section__list hidden">
+            <li>
+                <img src="/assets/next_project.png" alt="name" class="projects__section__list__image">
+
+                <a class="projects__section__list__text" href="https://github.com/Lucas-V-Roveri">(Git)</a>
+            </li>
+
+    </section>
+
+
+    <footer id="contact" class="contact__section">
+        <h2 class="contact__title">Contact</h2>
+        <div class="contact__content">
+            <ul class="contact__content__list">
+                <li>
+                    <h3>Formal Contact</h3>
+                    <p class="contact__content__text">Professional e-mail: </p>
+                    <a class="contact__content__text" href="mailto:lucas.vilela2019@outlook.com">lucas.vilela2019@outlook.com</a>
+
+                </li>
+                <li>
+                    <h3>Social Media</h3>
+                    <a class="contact__content__text" href="https://www.linkedin.com/in/lucas-vilela-roveri-952588188/">Linkedin</a>
+                    <a class="contact__content__text" href="https://github.com/Lucas-V-Roveri">Github</a>
+                    <a class="contact__content__text" href="https://www.instagram.com">@_lucasroveri_</a>
+                </li>
+            </ul>
+        </div>
     </footer>
+
 </body>
+
+
+
 </html>

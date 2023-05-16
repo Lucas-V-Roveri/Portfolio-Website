@@ -1,0 +1,377 @@
+:root{
+    
+    --background-main: #2D2D2D;
+    --buttons-main: #414141;
+    --secondary-main: #7996FC;
+    --terciary-main: #FFFFFF;
+    --terciary-sec: #C9C9C9;
+
+}
+
+
+
+@media (max-width: 1024px) {
+
+
+
+    .main{
+        display: grid;
+        
+    }
+    
+    .content {
+
+        display: flex;
+        flex-direction: column;
+        margin: 0em 5em 5em 5em ;
+ 
+    }
+    
+    .content__text{
+        padding: 2% 0 0 0;
+        color: var(--terciary-main);
+        font-size: 3.2rem;
+        text-align: center;
+        line-height: 80px;
+    }
+    .content__text__links{
+     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5%;  
+    
+    }
+    
+    .content__text__links__button{
+     
+        font-size: 2.5rem;
+        color: var(--terciary-main);
+        background-color: var(--secondary-main);
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        font-family: 'Jost', sans-serif;
+        width: 210px;
+        height: 60px;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 2.2rem;
+        text-decoration: none;
+        padding: 0 1% 2% 1%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border: 1px solid var(--terciary-main);
+        white-space: nowrap;
+    
+    
+    
+    }
+    .content__image{
+
+        height: auto;
+        max-width: 90%;
+        
+    
+    }
+    
+
+
+
+
+
+        
+    .about__section{
+
+        flex-direction: column;
+        display:flex;
+        margin: 5% 2% 2% 2%;
+    
+        
+    }
+    .about__section__content{
+        
+        color: var(--terciary-main);
+        font-family: 'Jost', sans-serif;
+
+        font-size: 2rem;
+        margin: 3% 13% 15% 13%;
+        place-items: center;
+        align-content: center;
+        text-align: left;
+        
+    }
+
+
+    .about__content__text{
+        color: var(--terciary-main);
+        text-decoration: none;
+        font-weight: 200;
+        font-style: italic;
+        font-size: 1.9rem;
+    }
+
+
+
+
+
+    .projects__section{
+    
+        font-family: 'Jost', sans-serif;
+        color: var(--terciary-main);
+        margin: 10%;
+        
+    }
+    
+
+    
+    .projects__section__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        width: 90x;
+      
+        
+    }
+    
+    .projects__section__list li {
+        margin: 2% 5% 2% 5%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+    }
+    
+ 
+    .projects__section__list__image{
+        border-radius: 10%;
+        height: 250px; 
+        width: 59%; 
+        object-fit: cover;
+        
+    }
+
+    
+    .projects__section__list__image:hover{
+        height: 250px; 
+        width: 52%; 
+    }
+    
+
+/*Contact section*/
+
+.contact__section{
+    font-family: 'Jost', sans-serif;
+    background-color: var(--buttons-main);
+    height: 500px;
+    border-radius: 15% 15% 0 0;
+
+
+
+    color: var(--terciary-main);
+    font-size: 2rem;
+ 
+}
+
+
+.contact__title{
+    padding: 5% 0 2% 0%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.contact__content__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    margin: 2% 15% 0 15%;
+    list-style: none;
+
+}
+
+.contact__content__list h3{
+    color: var(--terciary-main);
+    font-weight: 500;
+}
+.contact__content__list a{
+
+    color: var(--terciary-sec);
+    text-decoration: none;
+
+}
+
+}
+
+
+
+/*Phone proportions*/
+
+
+@media (max-width: 650px) {
+
+
+.head__menu{
+    width: 100%;
+    margin: 3% 5% 2% 5%;
+
+}
+.head__menu__buttons{
+    font-size: 1.7rem;
+    text-shadow: -2px 1px var(--buttons-main);
+
+}
+
+.head__menu__buttons:hover{
+    color: var(--terciary-main);
+    text-shadow: 0px 0px var(--terciary-sec);
+}
+
+
+
+    
+    .content__text{
+        padding: 2% 0 0 0;
+        color: var(--terciary-main);
+        font-size: 2.1em;
+
+        line-height: 41px;
+    }
+    .content__text__links{
+     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5%;  
+    
+    }
+    
+    .content__text__links__button{
+     
+        font-size: 2rem;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+        text-decoration: none;
+        padding: 7% 1% 1% 1%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border: 1px solid var(--terciary-main);
+        white-space: nowrap;
+    
+    
+    
+    }
+    .content__image{
+
+        height: 360px;
+        max-width: 215%;
+        
+    
+    }
+    
+
+        
+    .about__section{
+
+        margin: 5% 2% 2% 2%;
+    
+        
+    }
+    .about__section__content{
+    
+        font-size: 1.5rem;
+        margin: 15% 5% 20% 5%;
+        place-items: center;
+        align-content: center;
+        text-align: left;
+        
+    }
+    .about__content__text{
+        font-size: 1.4rem;
+    }
+
+
+
+
+        
+    /* Skills section*/
+
+
+    .skills__section{
+
+        padding: 2% 30% 10% 0%;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        
+        
+    }
+
+
+    .skills__section__skills h3{
+        font-size: 1.5rem;
+    }
+    .progress__bar{
+        width: 200%;
+        height: 10px;  
+    }
+
+    .projects__section__list__image{
+        height: 250px; 
+        width: 100%; 
+    }
+    .projects__section__list h3{
+        font-size: 1.9rem;
+    }
+
+    .projects__section__list__text{
+        font-size: 1.5rem;
+    }
+
+    .projects__section__list__image:hover{
+        height: 250px; 
+        width: 100%; 
+    }
+    
+
+/*Contact section*/
+
+.contact__section{
+    font-family: 'Jost', sans-serif;
+    background-color: var(--buttons-main);
+    height: 500px;
+    border-radius: 15% 15% 0 0;
+
+
+
+    color: var(--terciary-main);
+    font-size: 1.5rem;
+ 
+}
+
+
+.contact__title{
+    padding: 5% 0 2% 0%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+
+.contact__content__text{
+    font-size: 1.3rem;
+}
+
+
+
+
+}

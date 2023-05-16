@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+
+/* General section*/
+
+:root{
+    
+    --background-main: #2D2D2D;
+    --buttons-main: #414141;
+    --secondary-main: #7996FC;
+    --terciary-main: #FFFFFF;
+    --terciary-sec: #C9C9C9;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+strong {
+
+color: var(--secondary-main);
+
+}
+
+
+
+
+
+
+
+/*Fade in animation */
+
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(0);
+    transform: translate(-100%);
+
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+    transform: translate(0);
+}
+
+
+
+/*Skills section
+    adding animation
+    and each bar color
+*/
+
+.skills__section h2{
+
+    font-family: 'Jost', sans-serif;
+    color: var(--terciary-main);
+    font-size: 3rem;
+    text-align: center;
+    line-height: 80px;
+
+
+}
+
+
+.skills__section__skills__html{
+    background: #A05344;
+    animation: skills__section__skills__html 1s linear forwards;
+}
+
+.skills__section__skills__css{
+    background: #892CDC;
+    animation: skills__section__skills__css 1s linear forwards;
+}
+
+.skills__section__skills__javascript{
+    background: #E79E4F;
+    animation: skills__section__skills__javascript 1s linear forwards;
+}
+.skills__section__skills__java{
+    background: #519872;
+    animation: skills__section__skills__java 1s linear forwards;
+}
+.skills__section__skills__python{
+    background: #FFD369;
+    animation: skills__section__skills__python 1s linear forwards;
+}
+.skills__section__skills__react{
+    background: #721da0;
+    animation: skills__section__skills__react 1s linear forwards;
+}
+.skills__section__skills__bootstrap{
+    background: #BC6FF1;
+    animation: skills__section__skills__bootstrap 1s linear forwards;
+}
+
+/*Skills Section
+Adding the little border of each color*/
+
+.skills__section__skills__html span{
+    border: 1px solid #A05344;
+}
+
+.skills__section__skills__css span{
+    border: 1px solid #892CDC;
+}
+
+.skills__section__skills__javascript span{
+    border:  1px solid #E79E4F;
+}
+.skills__section__skills__java span{
+    border:  1px solid #519872;
+}
+.skills__section__skills__python span{
+    border: 1px solid #FFD369;
+}
+.skills__section__skills__react span{
+    border: 1px solid #721da0;
+}
+.skills__section__skills__bootstrap span{
+    border: 1px solid #BC6FF1;
+}
+
+
+
+@keyframes skills__section__skills__html {
+    100%{
+        width:86%;
+    }
+}
+@keyframes skills__section__skills__css {
+    100%{
+        width:66%;
+    }
+}
+@keyframes skills__section__skills__javascript {
+    100%{
+        width:60%;
+    }
+}
+@keyframes skills__section__skills__java {
+    100%{
+        width:65%;
+    }
+}
+@keyframes skills__section__skills__python {
+    100%{
+        width:65%;
+    }
+}
+@keyframes skills__section__skills__react {
+    100%{
+        width:45%;
+    }
+}
+@keyframes skills__section__skills__bootstrap {
+    100%{
+        width:36%;
+    }
+}
+
+/*END OF THE SKILLS SECTION*/
